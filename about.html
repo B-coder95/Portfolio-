@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Me</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    min-height:100vh;
+    background:linear-gradient(-45deg,#0f172a,#1e293b,#2563eb,#7c3aed);
+    background-size:400% 400%;
+    animation:bgMove 12s ease infinite;
+    color:white;
+}
+
+@keyframes bgMove{
+    0%{background-position:0% 50%;}
+    50%{background-position:100% 50%;}
+    100%{background-position:0% 50%;}
+}
+
+nav{
+    text-align:center;
+    padding:20px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 15px;
+    font-size:18px;
+    font-weight:500;
+}
+
+nav a:hover{
+    color:#60a5fa;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:30px auto;
+}
+
+.profile-card{
+    background:rgba(255,255,255,0.08);
+    backdrop-filter:blur(15px);
+    border:1px solid rgba(255,255,255,0.2);
+    border-radius:25px;
+    padding:40px;
+    display:flex;
+    align-items:center;
+    gap:40px;
+    box-shadow:0 8px 32px rgba(0,0,0,0.3);
+}
+
+.profile-img{
+    width:220px;
+    height:220px;
+    border-radius:50%;
+    object-fit:cover;
+    border:5px solid rgba(255,255,255,0.3);
+}
+
+.profile-content h1{
+    font-size:42px;
+    margin-bottom:10px;
+}
+
+.profile-content p{
+    font-size:18px;
+    line-height:1.8;
+}
+
+.section{
+    margin-top:30px;
+    background:rgba(255,255,255,0.08);
+    backdrop-filter:blur(15px);
+    border-radius:20px;
+    padding:30px;
+    box-shadow:0 8px 32px rgba(0,0,0,0.2);
+}
+
+.section h2{
+    margin-bottom:15px;
+    color:#93c5fd;
+}
+
+.section p,
+.section li{
+    line-height:1.8;
+    font-size:17px;
+}
+
+ul{
+    padding-left:20px;
+}
+
+@media(max-width:768px){
+
+    .profile-card{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .profile-img{
+        width:180px;
+        height:180px;
+    }
+
+    .profile-content h1{
+        font-size:32px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="skills.html">Skills</a>
+    <a href="projects.html">Projects</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+<div class="container">
+
+    <div class="profile-card">
+
+        <div class="profile-content">
+            <h1>Basant Kumar Mahto</h1>
+
+            <p>
+                M.Tech in Computer Science & Engineering.
+                Passionate about Cyber Security, Artificial Intelligence,
+                Machine Learning, Digital Forensics and Research.
+            </p>
+        </div>
+
+    </div>
+
+    <div class="section">
+        <h2>Career Objective</h2>
+
+        <p>
+            To contribute to innovative research and technological
+            advancements in Computer Science while pursuing excellence
+            in Cyber Security, Artificial Intelligence and Data Analytics.
+        </p>
+    </div>
+
+    <div class="section">
+        <h2>Education</h2>
+
+        <ul>
+            <li>M.Tech in Computer Science & Engineering</li>
+            <li>B.Tech in Computer Science & Engineering</li>
+            <li>Additional Certifications & Research Training</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Research Interests</h2>
+
+        <ul>
+            <li>Cyber Security</li>
+            <li>Machine Learning</li>
+            <li>Artificial Intelligence</li>
+            <li>Natural Language Processing</li>
+            <li>Digital Forensics</li>
+            <li>Data Analytics</li>
+        </ul>
+    </div>
+
+</div>
+
+</body>
+</html>

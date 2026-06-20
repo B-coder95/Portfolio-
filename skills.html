@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Skills</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    min-height:100vh;
+    background:linear-gradient(-45deg,#0f172a,#1e293b,#2563eb,#7c3aed);
+    background-size:400% 400%;
+    animation:bgMove 12s ease infinite;
+}
+
+@keyframes bgMove{
+    0%{background-position:0% 50%;}
+    50%{background-position:100% 50%;}
+    100%{background-position:0% 50%;}
+}
+
+nav{
+    text-align:center;
+    padding:20px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 15px;
+    font-size:18px;
+    font-weight:500;
+}
+
+nav a:hover{
+    color:#93c5fd;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:30px auto;
+}
+
+.title{
+    text-align:center;
+    color:white;
+    font-size:45px;
+    margin-bottom:40px;
+}
+
+.skills-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:25px;
+}
+
+.skill-card{
+    background:rgba(255,255,255,0.08);
+    backdrop-filter:blur(15px);
+    border-radius:20px;
+    padding:25px;
+    border:1px solid rgba(255,255,255,0.2);
+    transition:0.4s;
+}
+
+.skill-card:hover{
+    transform:translateY(-10px);
+}
+
+.skill-card h2{
+    color:white;
+    margin-bottom:20px;
+}
+
+.skill{
+    margin-bottom:18px;
+}
+
+.skill-name{
+    color:white;
+    margin-bottom:8px;
+}
+
+.bar{
+    width:100%;
+    height:10px;
+    background:rgba(255,255,255,0.2);
+    border-radius:20px;
+    overflow:hidden;
+}
+
+.progress{
+    height:100%;
+    border-radius:20px;
+    background:white;
+}
+
+.html{width:90%;}
+.css{width:85%;}
+.js{width:75%;}
+.python{width:90%;}
+.cpp{width:80%;}
+.cyber{width:85%;}
+.ml{width:80%;}
+.sql{width:85%;}
+
+.tech-list{
+    list-style:none;
+}
+
+.tech-list li{
+    color:white;
+    padding:10px 0;
+    border-bottom:1px solid rgba(255,255,255,0.1);
+}
+
+@media(max-width:768px){
+
+    .title{
+        font-size:35px;
+    }
+
+    nav a{
+        display:block;
+        margin:10px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="skills.html">Skills</a>
+    <a href="projects.html">Projects</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+<div class="container">
+
+    <h1 class="title">My Skills</h1>
+
+    <div class="skills-grid">
+
+        <div class="skill-card">
+
+            <h2>Programming</h2>
+
+            <div class="skill">
+                <div class="skill-name">Python</div>
+                <div class="bar"><div class="progress python"></div></div>
+            </div>
+
+            <div class="skill">
+                <div class="skill-name">C++</div>
+                <div class="bar"><div class="progress cpp"></div></div>
+            </div>
+
+            <div class="skill">
+                <div class="skill-name">SQL</div>
+                <div class="bar"><div class="progress sql"></div></div>
+            </div>
+
+        </div>
+
+        <div class="skill-card">
+
+            <h2>Web Development</h2>
+
+            <div class="skill">
+                <div class="skill-name">HTML</div>
+                <div class="bar"><div class="progress html"></div></div>
+            </div>
+
+            <div class="skill">
+                <div class="skill-name">CSS</div>
+                <div class="bar"><div class="progress css"></div></div>
+            </div>
+
+            <div class="skill">
+                <div class="skill-name">JavaScript</div>
+                <div class="bar"><div class="progress js"></div></div>
+            </div>
+
+        </div>
+
+        <div class="skill-card">
+
+            <h2>Research & Technology</h2>
+
+            <div class="skill">
+                <div class="skill-name">Cyber Security</div>
+                <div class="bar"><div class="progress cyber"></div></div>
+            </div>
+
+            <div class="skill">
+                <div class="skill-name">Machine Learning</div>
+                <div class="bar"><div class="progress ml"></div></div>
+            </div>
+
+        </div>
+
+        <div class="skill-card">
+
+            <h2>Tools & Technologies</h2>
+
+            <ul class="tech-list">
+                <li>VS Code</li>
+                <li>Git & GitHub</li>
+                <li>Google Colab</li>
+                <li>Linux</li>
+                <li>MySQL</li>
+                <li>Microsoft Office</li>
+            </ul>
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
